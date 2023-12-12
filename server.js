@@ -7,4 +7,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.listen(5500);
+const port = 5500;
+app.listen(port, () => {
+  console.log(`Server Listening at http://0.0.0.0:${port}`);
+});
